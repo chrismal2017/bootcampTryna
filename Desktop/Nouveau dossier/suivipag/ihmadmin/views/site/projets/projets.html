@@ -1,0 +1,101 @@
+<!--MAIN START-->
+<div id="main">
+        <!--INNER BANNER START-->
+        <div id="inner-banner">
+            <div class="container">
+                <div class="inner-banner-heading">
+                <h1>Projets</h1>
+                <em>Liste des projets phares du PAG</em> </div>
+            </div>
+            <div class="breadcrumb-col"> <a ui-sref="home" class="btn-back"><i class="fa fa-home" aria-hidden="true"></i>Retour à l'accueil</a>
+                <ol class="breadcrumb">
+                <li><a ui-sref="home">Accueil</a></li>
+                <li class="active">Projets</li>
+                </ol>
+            </div>
+        </div>
+        <!--INNER BANNER END-->
+        <!--BLOG PAGE START-->
+    <section class="blog-page event-list liste-projets">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <table datatable="ng" dt-options="tableProjets.dtOptions">
+                        <thead>
+                            <tr>
+                                <td style="display:none"></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-show="loadingPage">
+                                <td align="center">
+                                    <span ><i class="fa fa-circle-o-notch fa-spin"></i></span></li>
+                                </td>
+                            </tr>
+                            <tr ng-repeat="projet in listProjets">
+                                <td>
+                                    <div class="event-box">
+                                        <div class="event-caption">
+                                            <div class="date-box" ng-show="(projet.dateDebutPrevisionnel | date: 'yyyy') > '2015'">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                <span>Prévu</span>
+                                                {{projet.dateDebutPrevisionnel | date: 'dd'}}
+                                                <span>{{projet.dateDebutPrevisionnel | date: 'MMM'}}</span>
+                                                <span>{{projet.dateDebutPrevisionnel | date: 'yyyy'}}</span>
+                                            </div>
+                                            <div class="text-col">
+                                            <h3 class="title"><a ui-sref="projet({nom: (projet.nom | slugify), id: projet.id})">{{projet.id}} - {{projet.nom | capitalizeFirst}}</a></h3>
+                                            <p>{{projet.description | limitTo: 150}}<span ng-show="projet.description.length > 150">...</span></p>
+                                            <a ui-sref="projet({nom: (projet.nom | slugify), id: projet.id})" class="btn-style-1">+ Détails</a> </div>
+                                        </div>
+                                        <div class="frame">
+                                            <span>
+                                                <img ng-src="{{projet.lien_preview}}" alt="Image preview">
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <aside>
+                        <div class="sidebar">
+                            <!-- <div class="widget-box">
+                                <h3>Rechercher</h3>
+                                <form ng-submit="filterSearch()">
+                                    <input required type="text" placeholder="Rechercher..." ng-model="searchvalue">
+                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div> -->
+                            <div class="widget-box filter">
+                                <h3>Filter par secteur</h3>
+                                <div class="archive-widget">
+                                    <button class="btn btn-sm elem" ng-repeat="sect in listSecteurs" ng-click="filter('SECTEUR',sect.id)">{{sect.nom}}</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <button class="btn btn-sm btn-success" ng-click="resetFilter()">Réinitialiser</button>
+                            <!-- <div class="widget-box filter">
+                                <h3>Filter par pilier</h3>
+                                <div class="archive-widget">
+                                    <button class="btn btn-sm elem" ng-repeat="p in listPiliers" ng-click="filter('PILIER',p.id)">{{p.nom}}</button>
+                                </div>
+                            </div>
+
+                            <div class="widget-box">
+                                <h3>Axes</h3>
+                                <div class="archive-widget filter">
+                                    <button class="btn btn-sm elem" ng-repeat="a in listAxes"  ng-click="filter('AXE',a.id)">{{a.nom}}</button>
+                                    </ul>
+                                </div>
+                            </div> -->
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--MAIN END-->

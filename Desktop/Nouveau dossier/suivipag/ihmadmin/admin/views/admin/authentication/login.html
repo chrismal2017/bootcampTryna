@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta charset="utf-8">
+
+
+         
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+            
+            <!-- UIkit CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/css/uikit.min.css" />
+      
+      <!-- UIkit JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit-icons.min.js"></script>
+      
+      <meta name="viewport" content="width=device-width">       
+      <link
+      type="text/css"
+      rel="stylesheet"
+      href="../../assets/css/mobile.css"
+      media="screen,projection"/>
+ 
+              <link
+                  type="text/css"
+                  rel="stylesheet"
+                  href="assets/css/style.min.css"
+                  media="screen,projection"/>
+              <link
+                  type="text/css"
+                  rel="stylesheet"
+                  href="assets/css/style_admin.css"
+                  media="screen,projection"/>
+              <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+              <base href="/">
+              <link href="/node_modules/angular/angular-csp.css"></link>
+      
+
+</head>
+
+<body  ng-app="pag-site">
+<header>
+    <nav class="responsive" style="background-color:#167178" >  
+          <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"> <img width="100%" src="/assets/images/logo_suivi_pag.png" style="width: 30%; margin-top:10px;"> </a>
+  
+      </div>
+     </nav>
+        
+</header> 
+
+
+
+
+
+<section>
+
+    <div class="">
+      
+   
+      <div class="container">
+       
+
+        
+    <div style="margin-top:8%" class="row">
+
+        <div class="col s3">
+          <!-- Promo Content 1 goes here -->
+        </div>
+        <div class="col s5">
+     
+            <div>
+
+                <div style="min-width:250px; " class="uk-child-width-expand@s" uk-grid>
+                    <div  class="uk-grid-item-match">
+                     <div><center><img style="width: 60%; margin-top:10px;" src="/assets/images/logo_suivi_pag.png" /></center>
+                     </div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                         <div style="width:auto;"> <center> <h2 class="font" style="font-size:25px;">Interface d'Administration</h2></center> <hr class="uk-divider-icon"></div>
+                         
+                            <p>
+                               <div style="width:auto;" class="row">
+                                    <form class="col s12">
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                              <input id="text" type="text" class="validate"  ng-model="user.name" >
+                                              <label style="font-family:Arial, Helvetica, sans-serif;" for="name">Nom</label>
+                                            </div>
+                                          </div>
+                                         
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                          <input id="password" type="password" class="validate"   ng-model="user.password">
+                                          <label style="font-family:Arial, Helvetica, sans-serif;" for="password">Mot de passe</label>
+                                        </div>
+                                      <center>  <button style="width:93%" class="btn waves-effect waves-light" type="submit" name="action" ng-click="login()" >Se Connecter 
+                                        </button></center>
+                                       <!-- &nbsp; <a class="waves-effect waves-light btn" >&nbsp;&nbsp;<i class="material-icons left">cloud</i><span align="center"> Se connecter</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>-->
+
+                                      </div>
+
+                                      </form><br>
+                                     <div> <a style="font-size:13px; font-family:Arial, Helvetica, sans-serif;" >&nbsp;S'inscrire ?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <a  style="font-size:13px; font-family:Arial, Helvetica, sans-serif;">Aller sur la page public</a>
+                                    </div>
+                                    </div>
+                            </p>
+                        </div>
+                     </div>
+                  
+
+        </div>
+        <div class="col s2">
+          <!-- Promo Content 3 goes here -->
+        </div>
+  
+      </div>
+   
+   <!--
+          <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div>
+
+                  <div class="uk-child-width-expand@s" uk-grid>
+                      <div class="uk-grid-item-match">
+                          <div class="uk-card uk-card-default uk-card-body">
+                              <p>
+                                  <div class="row">
+                                      <form class="col s12">
+                                          <div class="row">
+                                              <div class="input-field col s12">
+                                                <input id="text" type="text" class="validate">
+                                                <label for="name">Nom</label>
+                                              </div>
+                                            </div>
+                                           
+                                        <div class="row">
+                                          <div class="input-field col s12">
+                                            <input id="password" type="password" class="validate">
+                                            <label for="password">Mot de passe</label>
+                                          </div>
+                                          &nbsp; <a class="waves-effect waves-light btn">&nbsp;<i class="material-icons left">cloud</i>&nbsp;&nbsp;&nbsp;button</a>
+
+                                        </div>
+
+                                        </form><br>
+                                       <div> <a align= >S'inscrire</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a>Aller sur la page</a>
+                                      </div>
+                                      </div>
+                              </p>
+                          </div>
+                       </div>
+                     </div>
+              </div>
+              <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+          </div>
+   
+        -->   
+
+
+
+
+
+
+
+
+   
+      
+   <!--
+    <div class="card horizontal">
+
+         <div class="card-stacked">
+           <div class="card-content">
+            
+   
+     <form>
+   
+         <div class="uk-margin">
+       <input class="uk-input uk-form-width-large" type="text" placeholder="Nom d'utilisateur">
+         </div>
+   
+         <div class="uk-margin">
+       <input class="uk-input uk-form-width-medium" type="text" placeholder="Mot de passe">
+         </div>
+   
+     </form>
+     <div><a class="waves-effect waves-light btn">Se Connecter</a></div><br>
+   
+     <div><a href=""> S'inscrire</a>
+              <a href="">     Aller sur la page public</a></div>
+   
+   
+     </div>
+        
+       </div>
+     </div>
+               
+   
+               
+   
+    
+       </div>
+   
+       </p> --></div>
+      
+      </div>
+   
+   </section>  
+
+
+
+
+
+<!--
+<section>
+
+ <div class="card medium">
+   
+
+   <div class="container">
+    
+
+
+
+  
+
+   
+     <div class="row">
+    
+    <div class="col s12 m4 l2"><p></p></div>
+
+    <div class="col s12 m4 l8"><p>
+
+ <div class="card horizontal">
+
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>
+
+	<form name="form" ng-submit="login()" role="form" >
+
+	    <div class="uk-margin">
+		<input class="uk-input uk-form-width-large" type="text" placeholder="Nom d'utilisateur"  type="text" name="username" id="username" ng-model="username" required / >
+      <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+
+    </div>
+
+	    <div class="uk-margin">
+		<input class="uk-input uk-form-width-medium" placeholder="Mot de passe"  type="password" name="password" id="password"  ng-model="password" required / >
+       <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+
+    </div>
+
+	</form>
+	<div align="center"><a  type="submit" ng-disabled="form.$invalid || dataLoading" class="waves-effect waves-light btn">Se Connecter</a></div><br>
+
+	<div><strong><a href=""> S'inscrire ?</a></strong>
+           <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""> Aller sur la page public</a></strong></div>
+
+</p>
+        </div
+     
+    </div>
+  </div>
+            
+
+            
+
+ 
+    </div>
+
+    </p></div>
+    <div class="col s12 m4 l2"><p></p></div>
+  </div>
+
+
+      
+
+   
+</div>
+    </div>
+
+
+   </div>
+</div>
+
+
+  </div>
+    
+
+</section>
+-->
+
+        <script type="text/javascript" src="/admin/assets/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/admin/assets/js/materialize.min.js"></script>
+
+        <!-- AngularJs core -->
+        <script src="/node_modules/angular/angular.js"></script>
+
+        <script src="/node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+        <script src="/node_modules/angular-resource/angular-resource.js"></script>
+        <script src="/admin/assets/js/lodash.js"></script>
+        <script src="/node_modules/moment/moment.js"></script>
+        <script src="/node_modules/moment/locale/fr.js"></script>
+        <script src="/node_modules/ui-select/dist/select.js"></script>
+        <script src="/node_modules/chart.js/dist/Chart.min.js"></script>
+        <script src="/node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+        <script src="/node_modules/angular-google-analytics/dist/angular-google-analytics.js"></script>
+
+        <script src="/node_modules/ng-file-upload/dist/ng-file-upload-shim.min.js"></script>
+        <script src="/node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script>
+
+        <!-- Editor text -->
+        <script type="text/javascript" src="/assets/tinymce/tinymce.min.js"></script>
+        <script type="text/javascript" src="/node_modules/angular-ui-tinymce/src/tinymce.js"></script>
+
+        <!-- Core application -->
+        <script src="/admin/src/app.js"></script>
+
+        <!-- Site Controllers -->
+        <script src="/admin/src/controllers/site/NavBarCtrl.js"></script>
+
+        <!-- Adimin Controllers -->
+        <script src="/admin/src/controllers/admin/HomeCtrl.js"></script>
+        <script src="/admin/views/admin/autentication/loginCtrl.js"></script>
+        
+
+        <!-- Consatantes -->
+        <script src="/admin/src/constantes/api.js"></script>
+        <script src="/admin/src/constantes/enumerations.js"></script>
+        <script src="/admin/src/constantes/frontend.js"></script>
+        <script src="/admin/views/admin/authentication/constants.js"></script>
+
+
+        <!-- Sevices -->
+        <script src="/admin/views/admin/authentication/loginService.js"></script>
+      
+
+        <!-- Directives -->
+        <script src="/admin/src/directives/dropdownDirective.js"></script>
+        <script src="/admin/src/directives/tabsDirective.js"></script>
+        <script src="/admin/src/directives/collapseDirective.js"></script>
+        <script src="/admin/src/directives/sliderDirective.js"></script>
+        <script src="/admin/src/directives/selectDirective.js"></script>
+        <script src="/admin/src/directives/dateDirective.js"></script>
+        <script src="/admin/src/directives/likeChartDirective.js"></script>
+        <script src="/admin/src/directives/commentChartDirective.js"></script>
+        <script src="/admin/src/directives/debatParPostChartDirective.js"></script>
+
+        <!-- End Core application -->
+
+
+
+
+</body>
+<footer style="margin-bottom:120px;" >
+
+</footer>
+</html>

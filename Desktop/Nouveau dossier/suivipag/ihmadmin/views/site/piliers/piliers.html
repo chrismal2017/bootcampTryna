@@ -1,0 +1,47 @@
+<!--MAIN START-->
+<div id="main">
+    <!--INNER BANNER START-->
+    <div id="inner-banner">
+        <div class="container">
+            <div class="inner-banner-heading">
+            <h1>Piliers</h1>
+            <em>Le Programme “Bénin Révélé” repose sur 3 grands piliers, eux-mêmes divisés en 7 axes stratégiques.</em> </div>
+        </div>
+        <div class="breadcrumb-col"> <a ui-sref="home" class="btn-back"><i class="fa fa-home" aria-hidden="true"></i>Retour à l'accueil</a>
+            <ol class="breadcrumb">
+            <li><a ui-sref="home">Accueil</a></li>
+            <li class="active">Piliers</li>
+            </ol>
+        </div>
+    </div>
+    <!--INNER BANNER END-->
+
+    <!--DEPARTMENTS SECTION START-->
+    <section class="department-page">
+        <section class="department-section department-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12" ng-repeat="pilier in listPiliers">
+                      <div class="bloc-axes">
+                          <div>
+                              <div class="causes-box axes pillier{{pilier.id}}">
+                                  <div class="text-box">
+                                      <h4>{{pilier.nom}}</h4>
+                                      <p class="description">
+                                          {{pilier.description}}
+                                          <span ng-show="pilier.description.length > 100">...</span>
+                                      </p>
+                                      <div class="btn-row"><a ui-sref="pilier({id:pilier.id})" class="btn-style-2">+ Détails</a></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+</div>
+<!--MAIN END-->

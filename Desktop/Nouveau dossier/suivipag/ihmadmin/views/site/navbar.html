@@ -1,0 +1,64 @@
+<!--HEADER START-->
+<header id="header">
+  <section class="top-row">
+    <div class="container">
+      <div class="left-box">
+        <ul>
+          <li><a ui-sref="sondage"><i class="fa fa-calendar" aria-hidden="true"></i>Sondage</a></li>
+          <li><a ui-sref="forum"><i class="fa fa-users" aria-hidden="true"></i>Forum</a></li>
+          <!-- <li><a href="#map-home"><i class="fa fa-map-marker" aria-hidden="true"></i>Carte</a></li> -->
+          <li><a ui-sref="filterprojet">Filtre projets</a></li>
+        </ul>
+      </div>
+      <!-- <a ui-sref="admin.main" class="btn-style-1">Connexion </a> </div> -->
+  </section>
+  <section class="logo-row">
+    <div class="container"> <strong class="logo"><a ui-sref="home"><img src="/assets/images/logo_suivi_pag.png" alt="monPAG"></a></strong>
+      <div class="menu-col">
+        <div class="btm-row">
+          <!--BURGER NAVIGATION SECTION START-->
+          <!--BURGER NAVIGATION SECTION END-->
+          <!-- <div class="header-search">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li>
+                  <form ng-submit="searchSite()">
+                    <input type="text" ng-model="search">
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+          <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav" id="nav">
+                <li class="active"><a ui-sref="home">Accueil</a></li>
+                <li><a href="#">Le Programme</a>
+                  <ul>
+                    <li><a ui-sref="piliers">Les piliers</a></li>
+                    <li><a ui-sref="axes">Les axes</a></li>
+                    <li><a ui-sref="secteurs">Les secteurs</a></li>
+                    <li><a ui-sref="projets">Les projets</a></li>
+                  </ul>
+                </li>
+                <li class=""><a ui-sref="projets">Les Projets</a></li>
+                <li><a href="#">Téléchargements</a>
+                  <ul>
+                    <li><a href="assets/docs/synthese-pag-benin-revele.pdf" target="_blank">Le PAG</a></li>
+                    <li><a href="assets/suivipag.apk" target="_blank">Application android</a></li>
+                    <!-- <li><a href="" class="teal-text text-pag">Les API</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<!--HEADER END-->
